@@ -1,3 +1,5 @@
+//1. 세 수 중 최소값 구하기
+
 function solution(a,b,c){
     let answer = Math.min(a,b,c)
     return answer;
