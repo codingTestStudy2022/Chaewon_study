@@ -9,22 +9,18 @@
 */
 
 function solution(num){
-    let odd = [];
     let sum = 0;
     let answer = [];
 
     for(let i=0;i<=num.length;i++){
         if(num[i] % 2 > 0){
-            odd.push(num[i]);
+            answer.push(num[i]);
             sum += num[i];
         }
     }
-    console.log('합:',sum)
-    console.log('홀수:',odd)
-    console.log('최소값:',Math.min(...odd))
 
-    answer.push.apply(answer,[sum,Math.min(...odd)])
-    return answer
+    console.log(sum)
+    console.log(Math.min(...answer))
 }
 
 let num = [2,31,4,10,6,7,23]
@@ -41,4 +37,7 @@ console.log(solution(num))
 
 + 여러개의 값을 한번에 push할 땐 .apply 객체로 추가하는 타겟 배열과 추가할 내용을 담은 배열 두개를 인자로 전달하면
 한번에 push가 가능
+
++ 수정: 조건이 배열이 아니라 console.log() 두번 찍는거여서 그거에 맞게 수정해줌
+
  */
