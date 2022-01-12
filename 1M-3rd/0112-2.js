@@ -18,7 +18,7 @@ function solution(word){
 let word = 'BANANA'
 console.log(solution(word))
 
-/* 풀이:
+/* 내 풀이:
 replaceAll('찾는문자','치환할문자') 메소드를 사용하면 간단하게 문자열을 변경시킬 수 있다.
 for문으로 문자열 순회하면서 A를 찾아서 그 위치를 #으로 바꾸는 방법도 있다.
 [참고]

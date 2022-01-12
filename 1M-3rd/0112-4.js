@@ -8,7 +8,7 @@
 대문자 개수 출력
 */
 
-// 풀이:문자열 순회하면서 주어진 단어를 대문자화 시킨것이 주어진 단어와 같으면 이미 대문자인거니까 answer의 값을 +1 시킴
+// 내 풀이:문자열 순회하면서 주어진 단어를 대문자화 시킨것이 주어진 단어와 같으면 이미 대문자인거니까 answer의 값을 +1 시킴
 function solution(string){
     let answer = 0; //answer초기화
     for(str of string){

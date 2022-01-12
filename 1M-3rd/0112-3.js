@@ -8,7 +8,7 @@
 해당 문자의 개수를 출력한다.
 */
 
-//풀이:문자열 순회하면서 주어진 단어와 같으면 answer의 값을 +1 시킴
+//내 풀이:문자열 순회하면서 주어진 단어와 같으면 answer의 값을 +1 시킴
 function solution(string,word){
     let answer = 0; //answer초기화
     for(str of string){
