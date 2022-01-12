@@ -48,4 +48,6 @@ for...of 명령문은 반복가능한 객체 (Array, Map, Set, String, TypedArra
 파이썬의 for문처럼 배열의 속성값이 i에 순서대로 할당되어 반복됨
 
 유사품 for..in.. : 반복할 수 없는 객체. for key in 객체명 형식으로 자주 사용된다고 함.
+
+시간복잡도가 O(n)인데,,이게맞낰
  */
