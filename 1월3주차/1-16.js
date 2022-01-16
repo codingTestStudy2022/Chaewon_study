@@ -10,7 +10,7 @@
 */
 
 /* 
-내 풀이:
+내 풀이 1:
 indexOf()로 특정 문자열을 검색했을 때 검색이 되지 않으면 -1을 리턴한다는 점을 이용.
 indexOf()로 문자열을 순회하면서 문자열의 존재여부를 체크하고, 해당 글자가 answer에 없다면 추가한다.
 */
@@ -25,11 +25,20 @@ function solution(string){
     }
     return answer
 }
-console.log(solution3('sstudentss'))
+console.log(solution2('sstudentss'))
 
-// 풀이2: indexOf()는 첫번째 위치만 반환한다는 특징을 이용,
-// for문 돌면서 각 문자열의 인덱스와 indexOf()의 인덱스가 일치하는지 확인하는 방식
+// + 내 풀이 2: set 이용하기
+// set을 이용해서 중복없는 값이 담긴 객체를 생성하고, 그 객체를 배열로 변환한 다음 join메소드를 이용해 문자열로 변환한다.
+// 문자열을 일일히 순회하는 것 보다는 성능이 좋다함. 강의에 없는데 걍 씀.
 function solution2(string){
+    let set = new Set(string.split(''))
+    let answer = [...set].join('')
+    return answer
+}
+
+// 풀이3: indexOf()는 첫번째 위치만 반환한다는 특징을 이용,
+// for문 돌면서 각 문자열의 인덱스와 indexOf()의 인덱스가 일치하는지 확인하는 방식
+function solution3(string){
     let answer = '';
     for (let i=0;i<string.length;i++){
         if(string.indexOf(string[i]) === i){
@@ -42,7 +51,7 @@ function solution2(string){
 }
 
 // + indexOf()를 이용해 특정 문자 개수 찾기
-function solution3(string){
+function solution4(string){
     let answer = 0;
     let pos = string.indexOf('t')
     while(pos !== -1){
