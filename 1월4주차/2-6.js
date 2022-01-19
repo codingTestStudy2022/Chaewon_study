@@ -11,10 +11,6 @@ N*N의 격자판이 주어지면 각 행의 합, 각 열의 합, 두 대각선�
 최대 합을 출력합니다.
 */
 
-
-/*내 풀이: diagonal
-*/
-
 function solution(arr){
     let n = arr.length;
     let answer = Number.MIN_SAFE_INTEGER
