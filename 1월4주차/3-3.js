@@ -17,16 +17,16 @@ let string1 = 'tge0a1h205er'
 let string2 = 'g0en2T0s8eSoft'
 console.log(solution(string2))
 
-/* 다른 방법:parseInt를 쓰지 말라고 제한을 걸 수도 있는데 그럴 때 사용할 수 있는 방식 + isNaN()메소드와 for문을 사용하는 방법
+/* 다른 방법:코딩인터뷰에서 가끔 메소드를 쓰지 말라고 제한을 걸 수도 있는데 그럴 때 사용할 수 있는 방식 + isNaN()과 for문을 사용하는 방법
 1)isNan()이라는 메소드를 이용해서 해당 문자가 숫자인지 아닌지 확인 가능. Not a Number의 줄임말, 문자에 해당하면 true를 반환.
-2)이를 이용해 문자열을 순회하면서 isNan 결과가 false이면 해당 문자를 answer에 추가하고, ParseInt()로 정수로 변경.
+2)이를 이용해 문자열을 순회하면서 isNan 결과가 false이면 해당 문자를 answer에 추가하고, 정수로 변경.
 어차피 내 풀이나 for문 풀이나 다 문자열을 순회하기 때문에 시간복잡도는 둘 다 O(n)임.
 */
 
 function solution2(string){
     let answer = 0
     for(let x of string){
-        if(!isNaN(x)) answer=answer*10+Number(x)
+        if(!isNaN(x)) answer = answer * 10 + Number(x)
         /*answer 동작방식-0208 예시:
         answer*10
         -> 0을 만나면(answer가 0인 상태에서 *10)
