@@ -16,8 +16,8 @@ function solution(string){
     return answer
 }
 
-let string = 'gooG'
-console.log(solution3(string))
+let string = 'gooGt'
+console.log(solution2(string))
 
 /*내 풀이2:
 1)문자열을 먼저 split으로 배열로 만든 후 reverse로 반전시킨 다음 join으로 다시 문자열로 만듬.
@@ -27,7 +27,7 @@ console.log(solution3(string))
 function solution2(string){
     let answer='';
     let reverse = string.split('').reverse().join()
-    answer = (string.toUpperCase === reverse.toUpperCase) ? 'YES' : 'NO'
+    answer = (string.toUpperCase() === reverse.toUpperCase()) ? 'YES' : 'NO'
     return answer
 }
 
