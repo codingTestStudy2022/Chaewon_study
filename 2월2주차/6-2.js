@@ -20,15 +20,14 @@ function solution(s){
     let stack = []
 
     for(let x of s){
-        if(x !== ')' && x !=='('){
-            stack.push(x)
-            console.log(stack,'push')
-        }else if(x === ')'){
-            stack.pop()
-            console.log(stack,'pop')
+        if(x === ')'){
+            while(stack.pop()!=='('); 
+            //이렇게 하면 pop한 요소가 무엇인지 판단하는 조건으로 주면서 pop을 할 수 있음. 
+        }else{
+            stack.push(x);
         }
     }
-
+    answer = stack.join('')
     return answer;
 }
 
