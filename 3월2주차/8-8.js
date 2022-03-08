@@ -1,10 +1,4 @@
-/*8-8.중복 순열 구하기
-// for(let i = 1;i<=num;i++){
-//     for(let j=1;i<=num;i++){
-//         console.log(i,j)
-//     }
-// }
-*/
+//8-8.중복 순열 구하기
 
 function solution(n,m){
     let answer = []
