@@ -24,9 +24,7 @@ function solution(id_list, report, k) {
             reportMap.set(rp_array[1],reportMap.get(rp_array[1])+1)
         }
     }
-
-    console.log(userMap)
-    console.log(reportMap)
+    
     for(let [key,val] of userMap){
         for(let i=0;i<val.length;i++){
             if(reportMap.get(val[i]) >= k){
